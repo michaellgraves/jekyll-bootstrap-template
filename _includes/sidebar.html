@@ -1,0 +1,31 @@
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}">{{ site.title }}</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+         <ul class="nav navbar-nav">
+            <li><a href="{{site.url}}{{site.baseurl}}">Lab Notebook</a></li>
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+            {% if node.title != null %}
+            {% if node.layout == "page" %}
+            <li><a href="{{ site.url }}{{site.baseurl}}{{ node.url}}">{{ node.title }}</a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+			<!--
+            <li><a href="{{ site.author.twitter }}"><img height="20" width="20" src="{{ site.baseurl }}/public/images/twitter.png" onmouseover="this.src='{{ site.baseurl }}/public/images/twitter-blue.png'" onmouseout="this.src='{{ site.baseurl }}/public/images/twitter.png'" /></a></li>
+			-->
+         </ul>
+      </div>
+      <!--/.nav-collapse -->
+   </div>
+   <!--/.container-fluid -->
+</nav>

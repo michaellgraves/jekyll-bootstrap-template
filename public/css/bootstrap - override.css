@@ -1,0 +1,142 @@
+
+/*
+	Bootstrap override file
+
+*/
+
+body {
+	font-size: 18px;
+	background-image: url("../images/grid-18px-masked.png");
+    background-repeat: repeat;
+}
+.taglabel{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container-padding {
+
+padding-top: 4rem;
+
+}
+
+
+@media (min-width: 768px) {
+.navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+}
+.navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+.navbar-collapse.in {
+    overflow-x: visible;
+}
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+}
+
+/*Tags*/
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  font: 15px/1.5 'PT Sans', serif;
+  background: #767676;
+  border-radius: 3px 0 0 3px;
+  color: #FFFFFF;
+  display: inline-block;
+  height: 25px;
+  line-height: 26px;
+  padding: 0 20px 0 10px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag-archive-font {
+  font-size: 13px;
+}
+
+/* right arrow */
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #767676;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Post styling for the index page */
+
+.post-index {
+		
+}
+
+.post-table-index {
+ border: none;
+ table-layout:fixed;
+ background-color:transparent;
+ vertical-align: top;
+}
+table td{
+  border-right: 30px solid transparent;
+   padding-bottom: 2rem;
+}
+
+.post-title-index {
+ font-size: 2rem;
+}
+
+.post-read-more {
+ font-style: italic;
+ font-size:  1.5rem;
+}
+.post-date-index {
+  display: block;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  font-size: .75rem;
+  color: #9a9a9a;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+
+
+

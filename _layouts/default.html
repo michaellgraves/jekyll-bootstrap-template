@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   {% include head.html %}
+   <body>
+		<!--Hide top spacing on phones-->
+		<div class="container-padding hidden-xs">
+	    </div>
+        <div class="row">
+            <div class="col-sm-3">
+               {% include sidebar.html %}
+            </div>
+            <div class="col-sm-9 pull-left">
+               <div class="content">
+                  {{ content }}
+               </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap Override CSS -->  
+        <script src="{{ site.url }}{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
+   </body>
+</html>
